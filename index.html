@@ -9,13 +9,12 @@
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
   background-color: #1e1f22;
-  color: #ffffff; /* chữ trắng */
+  color: #ffffff; 
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
-/* --- Header --- */
 header {
   background-color: #2b2d31;
   padding: 15px 0;
@@ -26,7 +25,6 @@ header {
   box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-/* --- Link trong header --- */
 header a {
   color: #ffffff;
   text-decoration: none;
@@ -42,16 +40,15 @@ header a:hover {
   color: #ffffff;
 }
 
-/* --- Tiêu đề chính --- */
+
 h1 {
   text-align: center;
   color: #ffffff;
-  margin-top: 20px;
 }
 
-/* --- Các khối nội dung --- */
+
 div {
-  max-width: 800px;
+  max-width: 50%;
   margin: 50px auto;
   background-color: #2b2d31;
   padding: 30px;
@@ -59,16 +56,16 @@ div {
   box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
-/* --- Tiêu đề từng phần (đã đổi sang trắng) --- */
+
 h2 {
-  color: white; /* chữ trắng */
-  border-bottom: 2px solid #ffffff; /* đường kẻ trắng */
+  color: #4287f5; 
+  border-bottom: 2px solid #ffffff; 
   padding-bottom: 8px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* --- Link trong nội dung --- */
+
 div a {
   color: #ffffff;
   text-decoration: none;
@@ -76,11 +73,13 @@ div a {
 }
 
 div a:hover {
-  color: #348feb; /* khi hover đổi sang xanh sáng */
+  color: #348feb; 
   text-decoration: underline;
 }
 
-/* --- Cuộn mượt --- */
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -89,7 +88,8 @@ html {
 
 <body>
   <h1>Trần Quốc Anh Phúc</h1>
-  <h1>Sinh viên năm nhất ngành CNTT</h1>
+  <h1>Web developer</h1>
+
 
   <header>
     <a href="#thongtin">Thông tin cá nhân</a>
@@ -101,23 +101,24 @@ html {
     <a href="#giaithuong">Giải thưởng</a>
   </header>
 
-  <div class="info-box" id="thongtin">
+  <div id="thongtin">
     <h2>Thông Tin Cá Nhân</h2>
-    <p><strong>Ngày sinh:</strong> </p>
-    <p><strong>Điện thoại:</strong> </p>
-    <p><strong>Email:</strong> </p>
-    <p><strong>Địa chỉ:</strong> </p>
+    <p><b>Ngày sinh:</b> 04/11/2006 </p>
+    <p><b>Điện thoại:</b> 0397990531</p>
+    <p><b>Email:</b> tranquocanhphuc@gmail.com</p>
+    <p><b>Địa chỉ:</b> Tân Phú, Đồng Nai</p>
+    <p><b>Website:</b> <a href="wallpaperanime.vercel.app">wallpaperanime.vercel.app</a></p>
   </div>
 
   <div id="muctieu">
     <h2>Mục tiêu nghề nghiệp</h2>
     <p>Trong vòng 4 năm tới trở thành Senior Web Developer.</p>
-    <p>Hoàn thành các dự án cá nhân như Web ôn thi tốt nghiệp THPT môn Tin, Web hỗ trợ học tập bằng Flash Card, Active Recall.</p>
+    <p>Hoàn thành các dự án cá nhân. Web ôn thi tốt nghiệp THPT môn Tin, Web hỗ trợ học tập bằng các phương pháp học tập.</p>
   </div>
 
   <div id="hocvan">
     <h2>Học vấn</h2>
-    <p>Tốt nghiệp THPT</p>
+    <p>Tốt nghiệp THPT.</p>
   </div>
 
   <div id="kynang">
@@ -134,16 +135,24 @@ html {
     <p>Giao tiếp, làm việc nhóm, giải quyết vấn đề, tự học.</p>
   </div>
 
-  <div id="duan">
+  <div id="duan" style="display: block;">
     <h2>Dự án</h2>
-    <h3>Web hình nền Anime</h3>
-    <a href="https://wallpaper-anime-ashen.vercel.app/" target="_blank">
-      https://wallpaper-anime-ashen.vercel.app/
-    </a>
+    <h3 >Web hình nền Anime</h3>
+    <a style="text-decoration: none;" href="wallpaperanime.vercel.app">wallpaperanime.vercel.app</a>
+    <a href="https://wallpaper-anime-ashen.vercel.app/" 
+   target="_blank" 
+   style="display: block; text-align: center; margin-top: 10px; text-decoration: none; font-size: 25px;">
+  Xem trang web tại đây
+</a>
+
+      <br>
+    <a href="https://wallpaper-anime-ashen.vercel.app/"> <img src="C:\Users\AD\Desktop\wallpaper.png" width="100%"></a>
+    
   </div>
 
   <div id="kinhnghiem">
     <h2>Kinh nghiệm làm việc</h2>
+    <p>Tạo hoạt động nhóm giải quyết đồ án.</p>
   </div>
 
   <div id="giaithuong">
