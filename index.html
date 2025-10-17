@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trần Quốc Anh Phúc | Web Developer</title>
+
+  <style>
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #1e1f22;
+  color: #ffffff; /* chữ trắng */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* --- Header --- */
+header {
+  background-color: #2b2d31;
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* --- Link trong header --- */
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+header a:hover {
+  background-color: #348feb;
+  color: #ffffff;
+}
+
+/* --- Tiêu đề chính --- */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+/* --- Các khối nội dung --- */
+div {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #2b2d31;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* --- Tiêu đề từng phần (đã đổi sang trắng) --- */
+h2 {
+  color: white; /* chữ trắng */
+  border-bottom: 2px solid #ffffff; /* đường kẻ trắng */
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* --- Link trong nội dung --- */
+div a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+div a:hover {
+  color: #348feb; /* khi hover đổi sang xanh sáng */
+  text-decoration: underline;
+}
+
+/* --- Cuộn mượt --- */
+html {
+  scroll-behavior: smooth;
+}
+  </style>
+</head>
+
+<body>
+  <h1>Trần Quốc Anh Phúc</h1>
+  <h1>Sinh viên năm nhất ngành CNTT</h1>
+
+  <header>
+    <a href="#thongtin">Thông tin cá nhân</a>
+    <a href="#muctieu">Mục tiêu nghề nghiệp</a>
+    <a href="#hocvan">Học vấn</a>
+    <a href="#kynang">Kỹ năng</a>
+    <a href="#duan">Dự án</a>
+    <a href="#kinhnghiem">Kinh nghiệm</a>
+    <a href="#giaithuong">Giải thưởng</a>
+  </header>
+
+  <div class="info-box" id="thongtin">
+    <h2>Thông Tin Cá Nhân</h2>
+    <p><strong>Ngày sinh:</strong> </p>
+    <p><strong>Điện thoại:</strong> </p>
+    <p><strong>Email:</strong> </p>
+    <p><strong>Địa chỉ:</strong> </p>
+  </div>
+
+  <div id="muctieu">
+    <h2>Mục tiêu nghề nghiệp</h2>
+    <p>Trong vòng 4 năm tới trở thành Senior Web Developer.</p>
+    <p>Hoàn thành các dự án cá nhân như Web ôn thi tốt nghiệp THPT môn Tin, Web hỗ trợ học tập bằng Flash Card, Active Recall.</p>
+  </div>
+
+  <div id="hocvan">
+    <h2>Học vấn</h2>
+    <p>Tốt nghiệp THPT</p>
+  </div>
+
+  <div id="kynang">
+    <h2>Kỹ năng</h2>
+    <h3>Frontend</h3>
+    <p>HTML, CSS, JavaScript, React.js, TypeScript, UI/UX Design.</p>
+    <h3>Backend</h3>
+    <p>Node.js, Express.js, PHP, REST API, Authentication.</p>
+    <h3>Database</h3>
+    <p>MySQL, MongoDB.</p>
+    <h3>Dev Tools</h3>
+    <p>Git, Docker (cơ bản), Linux (cơ bản).</p>
+    <h3>Kỹ năng mềm</h3>
+    <p>Giao tiếp, làm việc nhóm, giải quyết vấn đề, tự học.</p>
+  </div>
+
+  <div id="duan">
+    <h2>Dự án</h2>
+    <h3>Web hình nền Anime</h3>
+    <a href="https://wallpaper-anime-ashen.vercel.app/" target="_blank">
+      https://wallpaper-anime-ashen.vercel.app/
+    </a>
+  </div>
+
+  <div id="kinhnghiem">
+    <h2>Kinh nghiệm làm việc</h2>
+  </div>
+
+  <div id="giaithuong">
+    <h2>Giải thưởng, thành tích</h2>
+  </div>
+</body>
+</html>
